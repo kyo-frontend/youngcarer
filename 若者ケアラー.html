@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>若者ケアラー</title>
+  </head>
+  <body>
+    <div class="hedCon">
+      <div class="vertical">私たちも自分の人生を送りたかった。
+
+        <div class="fade-in1">ケアラーになんて</div>
+        <div class="fade-in2">ならなけりゃよかった。</div>
+      </div>
+        <div>
+          <img id="firstimg" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/04/悩む女子高生-3.jpg">
+        </div>
+    </div>
+    
+    <div class="wakamonobox">
+     <p class="title1">若者ケアラーとは</p>
+     <p class="wakamonotext">　本来担うべき大人の代わりに家事や家族のケアを担う、１８歳未満の<span class="orangehighlight">「ヤングケアラー」</span>が
+      大きな社会問題となっている。その支援を各自治体で行うなど、近年少しずつ動きを見せている。
+      しかしヤングケアラーも年を重ね、１８歳以上の若者がケアを担うことがある。
+      彼らのことを<span class="greenhighlight">若者ケアラー</span>と呼ぶ。そして、私も若者ケアラーでした。
+        </p>
+
+    </div>
+
+    <div class="imglayout">
+      <div id="leftText">
+       <p class="boxTitle">ヤングケアラーの現状</p>
+      　子どもが家族の世話をすることはごく普通のことと思われるかもしれない。でもヤングケアラーは本当なら享受できたはずの、子供としての時間と引き換えに家事や家族の世話を行っている。
+      学校を対象に実施した厚生労働省の調査では、20人に1人はヤングケアラーがいることがわかっている。ヤングケアラーはほぼ毎日家事や家族のために時間を取られている。</div>
+      <div id="rightImg">
+      <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/04/物思いにふける子ども.jpg">  
+      </div>
+    </div>
+
+    <div class="illustbox">
+      <p class="illustT1 ">もっと普通の子どもでいたかった。</p>
+      <p class="illustT2" id="ilText2">友達と遊びたいけど、家の事もやらなきゃ。</p>
+      <p class="illustT3" id="ilText3">皆とは違う。でも周りには言えない。別に好きでやってるわけじゃないのに・・・</p>
+      <p class="illustT4"  id="ilText4">でも、私しか</p>
+      <p class="illustT4-2"id="ilText4_2">看れる人がいないから・・・</p>
+      <p class="illustT5">また家から電話がかかってきた。</p>
+      <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/祖父の世話をする女の子-removebg-preview.png">
+    </div>
+
+    <div class="imglayout">
+     <div id="leftText">
+      <p class="boxTitle greencolor">ヤングケアラーから若者ケアラーへ</p>
+    　国や自治体がヤングケアラー支援を表明していくなど以前に比べると改善の動きはみられる。
+    ただヤングケアラーが年齢を重ねても、家族のケアが終わりを迎えるわけではない。ヤングケアラーはそのまま若者ケアラーへと移行する。
+    　若者ケアラーは子どもではないものの、自身の人生を左右するような進学や就職、結婚や出産など大事な時期にケアが重なることで人生に大きな影響を及ぼしてくる。
+     </div>
+      <div id="rightImg">
+       <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/04/頭を抱える女性.jpg">  
+      </div>
+  </div>
+
+  <div class="secondCon">
+     <div class="vertical secondVtext">いつまで続くのかな。
+
+      <span id="secondFade1">休みを自由に使えない日々。
+        
+        本当は出かけたりしたいのに。</span>
+
+      <span id="secondFade2">でもどうせ誰も代わりにやってくれない。</span>
+     </div>
+     <div>
+        <img id="　" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
+        <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
+     </div>
+  </div>
+
+<style>
+body{font-family: serif; 
+  overflow-x: hidden; /* 横スクロールを禁止 */
+  width: 100%;
+ }
+
+.hedCon{ 
+  background-size: cover;
+}
+.hedCon img{width: 100vw;
+  max-height: 700px;
+  object-fit: cover;
+	transition: opacity 1s ease-in-out;
+     }
+.vertical {
+    writing-mode: vertical-rl;
+    font-size: 180%;
+    font-weight: bold;
+    white-space: pre-line;
+    color: white;
+    position: absolute;
+    top: 130px;
+    left:1000px;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+    text-shadow: 2px 2px 10px black, -2px 2px 10px #000066, 2px -2px 10px black, -2px -2px 10px black;;
+}
+.fade-in1{animation-name: fadeinText; opacity: 0;
+    animation-delay: 1s; animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fade-in2{animation-name: fadeinText; opacity: 0;
+    animation-delay: 3s; animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeinText {
+    0% {opacity: 0.1;}
+    60%{opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.wakamonobox{font-size: 150%;
+  white-space: pre-line;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.title1{font-size: 150%;
+      font-weight: bold;
+      border-bottom: 10px solid #00FF33;
+      display: inline-block;
+}
+.wakamonotext{text-align: left; /* テキストを左寄せにする */
+  display: inline-block; /* テキストをブロック要素として扱い、中央揃えの影響を受けないようにする */
+}
+.orangehighlight{background:linear-gradient(transparent 80%,#ffaf58 60%);}
+.greenhighlight{background:linear-gradient(transparent 70%, #99FF66 60%);}
+.imglayout{display: flex;
+  margin: 0 100px; /* 左右に余白を設定 */
+}
+#leftText{white-space: pre-line;
+  font-size: 150%;
+  justify-content: center; 
+  flex-basis: 50%;
+  margin-right: 80px; /* rightImgとの間に右側の余白を設定 */
+}
+#rightImg img{flex-basis: 40%;
+  object-fit: cover;
+}
+.boxTitle{font-size: 120%; padding: 0.5em;/*文字周りの余白*/ font-weight: bold;
+  margin-top: -35px;
+  margin-bottom: -15px;
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  background: #fffaf4;
+}
+.greencolor{border-left: solid 5px #006633;/*左線（実線 太さ 色）*/
+  background: #CCFFCC;}
+
+.illustbox{background-color: #EEEEEE;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 180%; font-weight: bold;
+}
+.illustT2{text-align: left;
+  margin-left: 100px; opacity: 0;
+}
+.ap2{animation: appearTextL 3s 0.5s forwards;}
+@keyframes appearTextL {
+  0% {transform: translateX(-100px);
+     opacity: 0.1;}
+  50% {opacity: 0.6;}
+  100% {transform: translateX(0);
+    opacity: 1;}
+}
+.illustT3{text-align: right;
+margin-right: 100px; opacity: 0;}
+.ap3{animation: appearTextR 3s 2s forwards;}
+@keyframes appearTextR {
+  0% {transform: translateX(100px);
+     opacity: 0.1;}
+  50% {opacity: 0.6;}
+  100% {transform: translateX(0);
+    opacity: 1;}
+}
+.illustT4{position: relative; 
+    top: 80px; left:-550px; opacity: 0;}
+.ap4{animation: appearTextL 3s 2.5s forwards;}
+.illustT4-2{position: relative;
+    top: 80px; left:-400px; opacity: 0;}
+.ap4_2{animation: appearTextR 3s 2.5s forwards;}
+
+.illustT5{position: relative;
+    left: 400px;}
+.illustbox img{width: 300px;
+  margin-top: -180px;
+}
+.secondCon{background-size: cover;
+margin-top: -350px;}
+.secondCon img{width: 100%;
+  max-height: 800px;
+  object-fit: cover;
+	transition: opacity 1s ease-in-out;
+}
+
+.secondVtext{position:relative; top: 550px; left: 800px;
+  font-size: 160%; 
+  text-shadow: 2px 2px 3px #660000,  2px -2px 10px black, -2px -2px 10px black;;
+}
+#secondFade1, #secondFade2 {opacity: 0;}
+#dora{width: 200px; opacity: 0;
+  position: relative; top: -560px; left: 1200px;
+}
+.doraAnime{animation: apDora 3s 7s forwards;}
+
+@keyframes apDora{
+0% {transform: translateY(-50px);
+     opacity: 0.1;}
+  50% {opacity: 0.6;}
+  100% {transform: translateY(0);
+    opacity: 1;}
+}
+
+</style>
+
+<script>
+//スクロールイベントによるテキスト、ロゴ表示
+const ilText2= document.getElementById('ilText2');
+const ilText3= document.getElementById('ilText3');
+const ilText4 = document.getElementById('ilText4');
+const ilText4_2 = document.getElementById('ilText4_2');
+
+    window.addEventListener('scroll',()=>{
+    let scrollY = window.scrollY;
+    if (1400 < scrollY) {
+        ilText2.classList.add('ap2');}
+    if (1450 < scrollY) {
+        ilText3.classList.add('ap3');}
+    if (1500 < scrollY) {
+        ilText4.classList.add('ap4');
+        ilText4_2.classList.add('ap4_2');
+        }
+    });
+//スクロールによる二枚目背景画像のイベント
+const secondFade1 = document.getElementById('secondFade1');
+const secondFade2 = document.getElementById('secondFade2');
+const dora = document.getElementById('dora');
+
+window.addEventListener('scroll',()=>{
+    let scrollY = window.scrollY;
+    if (2500 < scrollY) {
+      secondFade1.classList.add('fade-in1');
+      secondFade2.classList.add('fade-in2');
+      dora.classList.add('doraAnime');
+      }
+    });
+
+</script>
