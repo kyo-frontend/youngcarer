@@ -102,9 +102,12 @@ body{font-family: serif;
     text-shadow: 2px 2px 10px black, -2px 2px 10px #000066, 2px -2px 10px black, -2px -2px 10px black;;
 }
 /* スマートフォン向けのスタイル */
-@media only screen and (max-width: 600px) {
-    .vertical {position: relative;
-        top: 20%;  left: 80%; /* 画面の右端から20%の位置 */}
+@media only screen and (max-width: 500px) {
+    .vertical {position: absolute;
+        top: 10px;  right: 10px; 
+        font-size: 90%; 
+        overflow: hidden;}
+    #rightImg img {width: 40%; /* 画面幅の40%以下にする */}
 }
 .fade-in1{animation-name: fadeinText; opacity: 0;
     animation-delay: 1s; animation-duration: 4s;
