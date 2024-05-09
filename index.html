@@ -70,7 +70,9 @@
      </div>
      <div>
         <img id="　" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
+        <p class="doraWords">もう君は十分頑張ったじゃないか。</p>
         <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
+        
      </div>
   </div>
 
@@ -108,10 +110,12 @@ body{font-family: serif;
         top: 10px;  right: 10px; 
         font-size: 90%; 
         overflow: hidden;}
-    .imglayout {width: 95%; margin: 0 auto;
+    .wakamonotext{white-space: normal; margin: 0 10px;}
+    .imglayout {width: 95%; 
       flex-direction: column;}
-    #leftText, #rightImg img {width: 90%; margin: 0 5px;}
-}	
+      #leftText{text-align: left;
+      padding-bottom: 50px;}
+}
 .fade-in1{animation-name: fadeinText; opacity: 0;
     animation-delay: 1s; animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -143,18 +147,15 @@ body{font-family: serif;
 .greenhighlight{background:linear-gradient(transparent 70%, #99FF66 60%);}
 
 .imglayout{display: flex; width: 90%;
-  margin: 0 100px; /* 左右に余白を設定 */
+  justify-content:space-around;
 }
-#leftText{white-space: pre-line;
-  font-size: 150%;
-  justify-content: center; 
-  flex-basis: 50%;
-  margin-right: 80px; /* rightImgとの間に右側の余白を設定 */
+#leftText{white-space: pre-line; font-size: 150%;
+  flex-basis: 50%;  margin-left: 40px; 
 }
 #rightImg img{flex-basis: 40%;
-  object-fit: cover;
+  object-fit: cover; margin-left: 40px; margin-right: -60px;
 }
-.boxTitle{font-size: 120%; padding: 0.5em;/*文字周りの余白*/ font-weight: bold;
+.boxTitle{font-size: 120%; padding: 0.4em;/*文字周りの余白*/ font-weight: bold;
   margin-top: -35px;
   margin-bottom: -15px;
   border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
