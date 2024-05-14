@@ -59,7 +59,7 @@
       </div>
   </div>
 
-  <div class="secondCon">
+<div class="secondCon">
      <div class="vertical secondVtext">いつまで続くのかな。
 
       <span id="secondFade1">休みを自由に使えない日々。
@@ -70,7 +70,9 @@
      </div>
      <div>
         <img id="　" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
-        <p class="doraWords">もう君は十分頑張ったじゃないか。</p>
+        <p id="doraWords" class="doraencourage">もう君は十分頑張ったじゃないか。</p>
+        <p id="doraWords2" class="doraencourage">これからは自分のために、</p>
+        <p id="doraWords3" class="doraencourage">自分の人生をいきていいんだよ。</p>
         <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
         
      </div>
@@ -213,14 +215,23 @@ margin-top: -350px;}
   object-fit: cover;
 	transition: opacity 1s ease-in-out;
 }
-
-.secondVtext{position:relative; top: 550px; left: 800px;
+.secondVtext{position:relative; top: 550px; left: 750px;
   font-size: 160%; 
-  text-shadow: 2px 2px 3px #660000,  2px -2px 10px black, -2px -2px 10px black;;
+  text-shadow: 2px 2px 3px #660000,  2px -2px 10px black, -2px -2px 10px black;
 }
+.moveup {animation: moveup 4s 9s forwards;
+}
+@keyframes moveup{
+0% {transform: translateY(0);
+     opacity: 0.8;}
+100% {transform: translateY(-600px);
+    opacity: 0;}
+}
+
 #secondFade1, #secondFade2 {opacity: 0;}
+
 #dora{width: 200px; opacity: 0;
-  position: relative; top: -560px; left: 1200px;
+  position: relative; top: -820px; left: 1200px;
 }
 .doraAnime{animation: apDora 3s 7s forwards;}
 
@@ -231,7 +242,18 @@ margin-top: -350px;}
   100% {transform: translateY(0);
     opacity: 1;}
 }
-
+.doraencourage{font-size: 190%; color: white; opacity: 0;
+  text-shadow: 2px 2px 3px rgb(252, 15, 15),  2px -2px 10px rgb(5, 5, 5), -2px -2px 10px #FF0461;
+  position:  relative; top: -700px; left: 770px;
+  white-space:nowrap; overflow:hidden;
+  }
+.wordsAnime{animation: doraWords 4s 10s forwards;}
+.wordsAnime2 {animation: doraWords 4s 12s forwards;}
+.wordsAnime3 {animation: doraWords 4s 13s forwards;}
+@keyframes doraWords{
+    0% {opacity: 0.1; width: 0%;}
+    100% {opacity: 1; width: 70%;}
+}
 </style>
 	  
 <script>
@@ -255,7 +277,11 @@ const ilText4_2 = document.getElementById('ilText4_2');
 //スクロールによる二枚目背景画像のイベント
 const secondFade1 = document.getElementById('secondFade1');
 const secondFade2 = document.getElementById('secondFade2');
+const secondVtext = document.querySelector('.secondVtext');
 const dora = document.getElementById('dora');
+const doraWords = document.getElementById('doraWords');
+const doraWords2 = document.getElementById('doraWords2');
+const doraWords3 = document.getElementById('doraWords3');
 
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
@@ -263,7 +289,11 @@ window.addEventListener('scroll',()=>{
       secondFade1.classList.add('fade-in1');
       secondFade2.classList.add('fade-in2');
       dora.classList.add('doraAnime');
-      }
+      doraWords.classList.add('wordsAnime');
+      doraWords2.classList.add('wordsAnime2');
+      doraWords3.classList.add('wordsAnime3');
+      secondVtext.classList.add('moveup'); 
+    }
     });
 
 </script>
