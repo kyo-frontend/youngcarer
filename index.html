@@ -107,10 +107,10 @@ body{font-family: serif;
 }
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 500px) {
-    body{font-size: 80%;}
+    body{font-size: 80%;max-width: 500px;}
     .vertical {position: absolute;
-        top: 10px;  right: 10px; 
-        font-size: 90%; 
+        top: 40px;  left: 320px; 
+        font-size: 110%; 
         overflow: hidden;}
     .wakamonotext{white-space: normal; margin: 0 10px;}
     .imglayout {width: 95%; 
@@ -118,7 +118,11 @@ body{font-family: serif;
     #leftText{text-align: left;
       padding-bottom: 50px;}
     #rightImg img{max-width: 480px;}
+    .illustT3{margin: auto;}
+    .illustT5{position: relative; top:-4opx; left: 5px;}
+    .secondVtext {top: auto;  left: auto; /* リセット */}
 }
+
 .fade-in1{animation-name: fadeinText; opacity: 0;
     animation-delay: 1s; animation-duration: 4s;
     animation-fill-mode: forwards;
