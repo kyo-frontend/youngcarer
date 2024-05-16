@@ -69,12 +69,13 @@
       <span id="secondFade2">でもどうせ誰も代わりにやってくれない。</span>
      </div>
      <div>
+	<div class="dorazone">
         <img id="　" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
         <p id="doraWords" class="doraencourage">もう君は十分頑張ったじゃないか。</p>
         <p id="doraWords2" class="doraencourage">これからは自分のために、</p>
         <p id="doraWords3" class="doraencourage">自分の人生をいきていいんだよ。</p>
         <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
-        
+        </div>
      </div>
   </div>
 
@@ -106,10 +107,10 @@ body{font-family: serif;
     text-shadow: 2px 2px 10px black, -2px 2px 10px #000066, 2px -2px 10px black, -2px -2px 10px black;;
 }
 /* スマートフォン向けのスタイル */
-@media only screen and (max-width: 500px) {
-    body{font-size: 80%;max-width: 500px;}
+@media only screen and (max-width: 600px) {
+    body{font-size: 80%;max-width: 600px;}
     .vertical {position: absolute;
-        top: 40px;  left: 320px; 
+        top: 40px;  left: 300px; 
         font-size: 110%; 
         overflow: hidden;}
     .wakamonotext{white-space: normal; margin: 0 10px;}
@@ -120,7 +121,10 @@ body{font-family: serif;
     #rightImg img{max-width: 480px;}
     .illustT3{margin: auto;}
     .illustT5{position: relative; top:-40px; left: 5px;}
-    .secondVtext {top: auto;  left: auto; /* リセット */}
+   .secondVtext {top: 10px;
+      left: 10px;}
+    .dorazone{position: absolute; 
+      top: 0px; left: 0px;}
 }
 
 .fade-in1{animation-name: fadeinText; opacity: 0;
