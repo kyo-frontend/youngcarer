@@ -108,7 +108,8 @@ body{font-family: serif;
 }
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 600px) {
-    body{font-size: 80%;max-width: 600px;}
+    body{font-size: 80%;
+      max-width: 600px;}
     .vertical {position: absolute;
         top: 40px;  left: 300px; 
         font-size: 110%; 
@@ -119,9 +120,11 @@ body{font-family: serif;
     #leftText{text-align: left;
       padding-bottom: 50px;}
     #rightImg img{max-width: 480px;}
-    .illustT3{margin: auto;}
-    .illustT5{position: relative; top:-40px; left: 5px;}
-   .secondVtext {top: 10px;
+    .illustT3{margin-right: 0;}
+    .illustT4{margin-left:-100px;} .illustT4-2{margin-top: -20px; margin-bottom: 50px;}
+    .illustT5{position:  relative; top: -50px; left: 100px;
+    margin-bottom: 120px;}
+    .secondVtext {top: 10px;
       left: 10px;}
     .dorazone{position: absolute; 
       top: 0px; left: 0px;}
@@ -196,7 +199,7 @@ body{font-family: serif;
     opacity: 1;}
 }
 .illustT3{text-align: right;
-margin-right: 100px; opacity: 0;}
+margin-right: 50px; opacity: 0;}
 .ap3{animation: appearTextR 3s 2s forwards;}
 @keyframes appearTextR {
   0% {transform: translateX(100px);
@@ -205,15 +208,15 @@ margin-right: 100px; opacity: 0;}
   100% {transform: translateX(0);
     opacity: 1;}
 }
-.illustT4{position: relative; 
-    top: 80px; left:-550px; opacity: 0;}
+.illustT4{text-align: left; margin-left: 70px;
+  opacity: 0;}
 .ap4{animation: appearTextL 3s 2.5s forwards;}
-.illustT4-2{position: relative;
-    top: 80px; left:-400px; opacity: 0;}
+.illustT4-2{text-align: left; margin-left: 120px;
+  opacity: 0;}
 .ap4_2{animation: appearTextR 3s 2.5s forwards;}
 
 .illustT5{position: relative;
-    left: 400px;}
+  text-align: right; margin-right: 100px;}
 .illustbox img{width: 300px;
   margin-top: -180px;
 }
