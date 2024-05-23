@@ -73,6 +73,8 @@
          <p id="doraWords" class="doraencourage">もう君は十分頑張ったじゃないか。</p>
          <p id="doraWords2" class="doraencourage">これからは自分のために、</p>
          <p id="doraWords3" class="doraencourage">自分の人生をいきていいんだよ。</p>
+	 <p id="doraWords4" class="doraencourage">君には仲間もいるんだよ。<br><br>
+          <a href="">続きを見る</a></p>
          <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
         </div>
   </div>
@@ -235,9 +237,14 @@ margin-right: 50px; opacity: 0;}
   position:  relative; top: -700px; left: 770px;
   white-space:nowrap; overflow:hidden;
   }
+.doraencourage a {margin-top: 150px;
+    color: #EDFFBE; 
+    text-shadow: 2px 2px 3px black;}
 .wordsAnime{animation: doraWords 4s 10s forwards;}
 .wordsAnime2 {animation: doraWords 4s 12s forwards;}
 .wordsAnime3 {animation: doraWords 4s 13s forwards;}
+.wordsAnime4 {animation: doraWords 4s 15s forwards;}
+	
 @keyframes doraWords{
     0% {opacity: 0.1; width: 0%;}
     100% {opacity: 1; width: 70%;}
@@ -298,6 +305,7 @@ const dora = document.getElementById('dora');
 const doraWords = document.getElementById('doraWords');
 const doraWords2 = document.getElementById('doraWords2');
 const doraWords3 = document.getElementById('doraWords3');
+const doraWords4 = document.getElementById('doraWords4');
 
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
@@ -308,6 +316,7 @@ window.addEventListener('scroll',()=>{
       doraWords.classList.add('wordsAnime');
       doraWords2.classList.add('wordsAnime2');
       doraWords3.classList.add('wordsAnime3');
+      doraWords4.classList.add('wordsAnime4');
       secondVtext.classList.add('moveup'); 
     }
     });
