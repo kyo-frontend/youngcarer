@@ -62,12 +62,10 @@
   <div class="secondCon">
     <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
      <div class="secondVtext">いつまで続くのかな。
-
-      <span id="secondFade1">休みを自由に使えない日々。
+      <p class="jsText" id ="secondFade1">休みを自由に使えない日々。
         
-        本当は出かけたりしたいのに。</span>
-
-      <span id="secondFade2">でもどうせ誰も代わりにやってくれない。</span>
+        本当は出かけたりしたいのに。</p>
+      <p class="jsText" id="secondFade2">でもどうせ誰も代わりにやってくれない。</p>
      </div>
         <div class="dorazone">
          <p id="doraWords" class="doraencourage">もう君は十分頑張ったじゃないか。</p>
@@ -218,8 +216,7 @@ margin-right: 50px; opacity: 0;}
 100% {transform: translateY(-600px);
     opacity: 0;}
 }
-#secondFade1, #secondFade2{font-size: 4vh;
-  opacity: 0;}
+.jsText{font-size: 4vh; opacity: 0;}
 
 #dora{width: 200px; opacity: 0;
   position: relative; top: -900px; left: 1150px;
@@ -252,7 +249,7 @@ margin-right: 50px; opacity: 0;}
 }
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 600px) {
-    body{font-size: %;
+    body{font-size: 80%;
       max-width: 600px;}
     .vertical {position: absolute;
         top: 30px;  left: 60%; 
