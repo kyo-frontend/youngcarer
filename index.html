@@ -138,13 +138,12 @@ body{font-family: serif;
 
 .imglayout{display: flex; width: 90%;
   justify-content:space-around;
-}
+  margin: 0 auto; /* 中央に配置 */}
 #leftText{white-space: pre-line; font-size: 150%;
-  flex-basis: 50%;  margin-left: 40px; 
-}
-#rightImg img{flex-basis: 40%;
-  object-fit: cover; margin-left: 40px; margin-right: -60px;
-}
+  flex-basis: 50%;}
+#rightImg {flex-basis: 45%;}
+#rightImg img{object-fit: cover; width: 100%;}
+	
 .boxTitle{font-size: 120%; padding: 0.4em;/*文字周りの余白*/ font-weight: bold;
   margin-top: -35px;
   margin-bottom: -15px;
