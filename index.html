@@ -60,21 +60,22 @@
   </div>
 
  <div class="secondCon">
-    <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
+    <img class="secondConBack" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/悩む男性　海　.jpg">
      <div class="secondVtext">いつまで続くのかな。
-      
+
       <div class="jsText" id="secondFade1">休みを自由に使えない日々。
         
         本当は出かけたりしたいのに。</div>
       <div class="jsText" id="secondFade2">でもどうせ誰も代わりにやってくれない。</div>
      </div>
         <div class="dorazone">
+         <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
          <p id="doraWords" class="doraencourage">もう君は十分頑張ったじゃないか。</p>
          <p id="doraWords2" class="doraencourage">これからは自分のために、</p>
          <p id="doraWords3" class="doraencourage">自分の人生をいきていいんだよ。</p>
-         <p id="doraWords4" class="doraencourage">君には仲間もいるんだよ。<br><br>
+         <p id="doraWords4" class="doraencourage">君には仲間もいるんだよ。<br>
+         <p id="doraWords5" class="doraencourage">同じようにケアから卒業した仲間が。<br><br>
           <a href="https://kyo-frontend.github.io/youngcarer2nd/">続きを見る</a></p>
-         <img id="dora" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/ドラえもん-removebg-preview.png">
         </div>
   </div>
 </body>
@@ -196,12 +197,11 @@ margin-right: 50px; opacity: 0;}
 .illustbox img{width: 300px;
   margin-top: -180px;
 }
-.secondCon{position: relative;
-  background-size: cover; margin-top: 100px;}
-.secondCon img{width: 100%;
-  max-height: 800px;
-  object-fit: cover;
+.secondCon{position: relative; width: 100vw; 
+  background-size: cover; margin-top: 100px;
 }
+.secondConBack{width: 100%; max-height: 800px;
+  object-fit: cover;}
 .secondVtext{writing-mode: vertical-rl; white-space: pre-line;
   position:absolute; top:5%; left: 50%;
   font-weight: bold; font-size: 4vh; 
@@ -220,7 +220,7 @@ margin-right: 50px; opacity: 0;}
 .jsText{font-size: 4vh; opacity: 0;}
 
 #dora{width: 200px; opacity: 0;
-  position: relative; top: -900px; left: 1150px;
+  position: relative; top: -500px; left: 1150px;
 }
 .doraAnime{animation: apDora 3s 7s forwards;}
 
@@ -231,26 +231,28 @@ margin-right: 50px; opacity: 0;}
   100% {transform: translateY(0);
     opacity: 1;}
 }
-.doraencourage{font-size: 190%; color: white; opacity: 0;
+.doraencourage{font-size: 4vh; color: white; opacity: 0;
   text-shadow: 2px 2px 3px rgb(252, 15, 15),  2px -2px 10px rgb(5, 5, 5), -2px -2px 10px #FF0461;
   position:  relative; top: -700px; left: 770px;
   white-space:nowrap; overflow:hidden;
   }
-.doraencourage a {margin-top: 150px;
+  .doraencourage a {
+    margin-top: 150px;
     color: #EDFFBE; 
-    text-shadow: 2px 2px 3px black;}
+    text-shadow: 2px 2px 3px black;
+}
 .wordsAnime{animation: doraWords 4s 10s forwards;}
 .wordsAnime2 {animation: doraWords 4s 12s forwards;}
 .wordsAnime3 {animation: doraWords 4s 13s forwards;}
 .wordsAnime4 {animation: doraWords 4s 15s forwards;}
-	
+.wordsAnime5 {animation: doraWords 4s 17s forwards;}
 @keyframes doraWords{
     0% {opacity: 0.1; width: 0%;}
     100% {opacity: 1; width: 70%;}
 }
 /* スマートフォン向けのスタイル */
 @media only screen and (max-width: 600px) {
-      body{font-size: 80%;
+    body{font-size: 80%;
       max-width: 600px;}
     .vertical {position: absolute;
         top: 30px;  left: 60%; 
@@ -259,21 +261,25 @@ margin-right: 50px; opacity: 0;}
     .imglayout {width: 95%; 
       flex-direction: column;}
     #leftText{padding-bottom: 50px;}
-　　#rightImg {flex-basis: 50%; margin: 0 auto;}
+    #rightImg {flex-basis: 50%; margin-left: 0;}
+    
     .illustbox{font-size: 3.5vh;
       padding-top: 10px; padding-right: 10px;}
     .illustT3{margin-right: 0;}
     .illustT4-2{margin-top: -20px; margin-bottom: 50px; }
     .illustT5{position:  relative; top: -30px; margin-right: 0; margin-bottom: 120px;}
     .secondCon{margin-top: 100px;}
-    .secondVtext {left: 55%; font-size: 2vh;}
-    .jsText{font-size: 2vh;}
-    .dorazone{position:  relative; margin-top: -200px;}
-    #dora{width: 120px;
-      position: relative; top:auto; left: 250px;}
-    .doraencourage{font-size: 2vh;
+    .secondConBack{height: 100vh;
+    }
+    .secondVtext {left: 40%; font-size: 3vh;}
+    .jsText{font-size: 3vh;}
+    .dorazone{position:  relative; margin-top: -500px;}
+    #dora{width: 150px;
+      position: relative; top:350px; left: 300px;}
+    .doraencourage{font-size: 3vh;
       top: auto; left: 180px;}
 }
+
 </style>
 	  
 <script>
@@ -303,6 +309,7 @@ const doraWords = document.getElementById('doraWords');
 const doraWords2 = document.getElementById('doraWords2');
 const doraWords3 = document.getElementById('doraWords3');
 const doraWords4 = document.getElementById('doraWords4');
+const doraWords5 = document.getElementById('doraWords5');
 
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
@@ -314,6 +321,7 @@ window.addEventListener('scroll',()=>{
       doraWords2.classList.add('wordsAnime2');
       doraWords3.classList.add('wordsAnime3');
       doraWords4.classList.add('wordsAnime4');
+      doraWords5.classList.add('wordsAnime5');
       secondVtext.classList.add('moveup'); 
     }
     });
